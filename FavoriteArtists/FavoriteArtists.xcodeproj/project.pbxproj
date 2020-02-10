@@ -14,6 +14,7 @@
 		F37CFA3C23F1ACCD00ECB39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37CFA3B23F1ACCD00ECB39E /* Assets.xcassets */; };
 		F37CFA3F23F1ACCD00ECB39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F37CFA3D23F1ACCD00ECB39E /* LaunchScreen.storyboard */; };
 		F37CFA4223F1ACCD00ECB39E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F37CFA4123F1ACCD00ECB39E /* main.m */; };
+		F37CFA5023F1C8BD00ECB39E /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = F37CFA4F23F1C8BD00ECB39E /* Artist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F37CFA3E23F1ACCD00ECB39E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F37CFA4023F1ACCD00ECB39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F37CFA4123F1ACCD00ECB39E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F37CFA4E23F1C8BD00ECB39E /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		F37CFA4F23F1C8BD00ECB39E /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +64,9 @@
 		F37CFA2E23F1ACCC00ECB39E /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
-				F37CFA4B23F1AD1D00ECB39E /* Reference */,
+				F37CFA4D23F1C88C00ECB39E /* Resources */,
+				F37CFA4C23F1C87000ECB39E /* Networking */,
+				F37CFA4B23F1AD1D00ECB39E /* App Lifecycle */,
 				F37CFA4A23F1AD0800ECB39E /* Models */,
 				F37CFA4923F1AD0000ECB39E /* View Controllers */,
 				F37CFA4823F1ACF500ECB39E /* Storyboards */,
@@ -90,11 +95,13 @@
 		F37CFA4A23F1AD0800ECB39E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F37CFA4E23F1C8BD00ECB39E /* Artist.h */,
+				F37CFA4F23F1C8BD00ECB39E /* Artist.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F37CFA4B23F1AD1D00ECB39E /* Reference */ = {
+		F37CFA4B23F1AD1D00ECB39E /* App Lifecycle */ = {
 			isa = PBXGroup;
 			children = (
 				F37CFA4123F1ACCD00ECB39E /* main.m */,
@@ -102,10 +109,24 @@
 				F37CFA3023F1ACCC00ECB39E /* AppDelegate.m */,
 				F37CFA3223F1ACCC00ECB39E /* SceneDelegate.h */,
 				F37CFA3323F1ACCC00ECB39E /* SceneDelegate.m */,
+			);
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		F37CFA4C23F1C87000ECB39E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F37CFA4D23F1C88C00ECB39E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				F37CFA4023F1ACCD00ECB39E /* Info.plist */,
 				F37CFA3B23F1ACCD00ECB39E /* Assets.xcassets */,
 			);
-			path = Reference;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +203,7 @@
 				F37CFA3123F1ACCC00ECB39E /* AppDelegate.m in Sources */,
 				F37CFA4223F1ACCD00ECB39E /* main.m in Sources */,
 				F37CFA3423F1ACCC00ECB39E /* SceneDelegate.m in Sources */,
+				F37CFA5023F1C8BD00ECB39E /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
