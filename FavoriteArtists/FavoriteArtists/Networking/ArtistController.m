@@ -13,7 +13,7 @@
 static NSString *baseURLString = @"https://theaudiodb.com/api/v1/json/1/search.php";
 
 @interface ArtistController ()
-@property (nonatomic) NSMutableArray<Artist *> *artists;
+@property (nonatomic) NSMutableArray<Artist *> *internalArtists;
 @end
 
 @implementation ArtistController
@@ -22,7 +22,7 @@ static NSString *baseURLString = @"https://theaudiodb.com/api/v1/json/1/search.p
 {
     if (self = [super init])
     {
-        _artists = [[NSMutableArray alloc] init];
+        _internalArtists = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -70,5 +70,17 @@ static NSString *baseURLString = @"https://theaudiodb.com/api/v1/json/1/search.p
     }] resume];
 }
 
+// MARK: loadArtist
+- (void)loadArtist
+{
+    NSURL *documentDirectory = [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:@"artists.plist"];
+    NSMutableArray *artistDictionaries = [[NSDictionary alloc] initWithContentsOfURL:documentDirectory][@"artists"];
+    
+    for (NSDictionary *d in artistDictionaries) {
+        Artist *artist = [[Artist alloc] initWithDictionary:d];
+        [self.internalArtists addObject:artist];
+    }
+    
+}
 
 @end
