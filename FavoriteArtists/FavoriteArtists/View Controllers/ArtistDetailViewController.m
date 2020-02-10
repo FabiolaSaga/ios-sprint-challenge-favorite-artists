@@ -53,14 +53,15 @@
     }
 }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     NSString *searchTerm = searchBar.text;
     [_artistController fetchArtist:searchTerm completionHandler:^(Artist *artist, NSError *error) {
         self.artist = artist;
         [self updateViews];
     }];
-}
+    }
+
 
 
 @end
