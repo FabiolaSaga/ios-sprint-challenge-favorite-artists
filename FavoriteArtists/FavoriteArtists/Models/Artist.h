@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface Artist : NSObject
 
+// Add init
+
+-(instancetype)initWithArtistName:(NSString *)artist biography:(NSString *)biography formed:(int)formed;
+
+// Add properties
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *bio;
+@property (nonatomic) int formed;
+
 @end
 
-NS_ASSUME_NONNULL_END
+
