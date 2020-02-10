@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class ArtistController;
+@class Artist;
 
-@interface ArtistDetailViewController : NSObject
+@interface ArtistDetailViewController : UIViewController <UISearchBarDelegate>
+
+@property (nonatomic) ArtistController *artistController;
+@property (nonatomic) Artist *artist;
 
 @end
 
-NS_ASSUME_NONNULL_END
