@@ -10,4 +10,16 @@
 
 @implementation Artist
 
+- (instancetype)initWithArtistName:(NSString *)artist biography:(NSString *)biography formed:(int)formed
+{
+    if (self = [super init])
+    {
+        _name = artist.copy;
+        _bio = biography.copy;
+        _formed = formed;
+    }
+    
+    return self;
+}
+
 @end
