@@ -73,6 +73,7 @@
 		F37CFA2E23F1ACCC00ECB39E /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				F37CFA4023F1ACCD00ECB39E /* Info.plist */,
 				F37CFA4D23F1C88C00ECB39E /* Resources */,
 				F37CFA4C23F1C87000ECB39E /* Networking */,
 				F37CFA4B23F1AD1D00ECB39E /* App Lifecycle */,
@@ -138,7 +139,6 @@
 		F37CFA4D23F1C88C00ECB39E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F37CFA4023F1ACCD00ECB39E /* Info.plist */,
 				F37CFA3B23F1ACCD00ECB39E /* Assets.xcassets */,
 			);
 			path = Resources;
