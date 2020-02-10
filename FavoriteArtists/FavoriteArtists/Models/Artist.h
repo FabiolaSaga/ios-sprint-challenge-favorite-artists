@@ -19,7 +19,7 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *bio;
-@property (nonatomic) int formed;
+@property (nonatomic) int yearFormed;
 
 @end
 

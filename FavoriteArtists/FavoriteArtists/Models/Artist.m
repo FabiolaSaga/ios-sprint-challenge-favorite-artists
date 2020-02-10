@@ -16,7 +16,7 @@
     {
         _name = artist.copy;
         _bio = biography.copy;
-        _formed = formed;
+        _yearFormed = formed;
     }
     
     return self;
