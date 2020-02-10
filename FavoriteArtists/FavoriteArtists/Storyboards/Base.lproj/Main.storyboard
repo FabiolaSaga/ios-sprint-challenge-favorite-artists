@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1228.985507246377" y="96.428571428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Artist Detail View Controller-->
         <scene sceneID="TUR-7X-yiL">
             <objects>
-                <viewController id="US6-vV-6ZU" sceneMemberID="viewController">
+                <viewController id="US6-vV-6ZU" customClass="ArtistDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lhT-q1-A3a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,8 +111,18 @@
                         <viewLayoutGuide key="safeArea" id="n38-DY-mtJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="2QN-Xq-QZC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="73T-Nt-YzV"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="73T-Nt-YzV">
+                            <connections>
+                                <action selector="save:" destination="US6-vV-6ZU" id="R4d-9s-piY"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistBioTextView" destination="cFU-lj-2z4" id="HKK-yb-qfg"/>
+                        <outlet property="artistName" destination="jT6-92-mlo" id="2uO-Hd-hFP"/>
+                        <outlet property="searchBar" destination="DOM-uJ-uUc" id="WHc-gB-xZb"/>
+                        <outlet property="yearFormedLabel" destination="CCG-KY-QmN" id="7GN-Bk-KDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5R-7r-WE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
