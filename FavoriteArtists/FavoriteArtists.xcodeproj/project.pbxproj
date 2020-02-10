@@ -61,19 +61,51 @@
 		F37CFA2E23F1ACCC00ECB39E /* FavoriteArtists */ = {
 			isa = PBXGroup;
 			children = (
+				F37CFA4B23F1AD1D00ECB39E /* Reference */,
+				F37CFA4A23F1AD0800ECB39E /* Models */,
+				F37CFA4923F1AD0000ECB39E /* View Controllers */,
+				F37CFA4823F1ACF500ECB39E /* Storyboards */,
+			);
+			path = FavoriteArtists;
+			sourceTree = "<group>";
+		};
+		F37CFA4823F1ACF500ECB39E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F37CFA3823F1ACCC00ECB39E /* Main.storyboard */,
+				F37CFA3D23F1ACCD00ECB39E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F37CFA4923F1AD0000ECB39E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F37CFA3523F1ACCC00ECB39E /* ViewController.h */,
+				F37CFA3623F1ACCC00ECB39E /* ViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F37CFA4A23F1AD0800ECB39E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F37CFA4B23F1AD1D00ECB39E /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				F37CFA4123F1ACCD00ECB39E /* main.m */,
 				F37CFA2F23F1ACCC00ECB39E /* AppDelegate.h */,
 				F37CFA3023F1ACCC00ECB39E /* AppDelegate.m */,
 				F37CFA3223F1ACCC00ECB39E /* SceneDelegate.h */,
 				F37CFA3323F1ACCC00ECB39E /* SceneDelegate.m */,
-				F37CFA3523F1ACCC00ECB39E /* ViewController.h */,
-				F37CFA3623F1ACCC00ECB39E /* ViewController.m */,
-				F37CFA3823F1ACCC00ECB39E /* Main.storyboard */,
-				F37CFA3B23F1ACCD00ECB39E /* Assets.xcassets */,
-				F37CFA3D23F1ACCD00ECB39E /* LaunchScreen.storyboard */,
 				F37CFA4023F1ACCD00ECB39E /* Info.plist */,
-				F37CFA4123F1ACCD00ECB39E /* main.m */,
+				F37CFA3B23F1ACCD00ECB39E /* Assets.xcassets */,
 			);
-			path = FavoriteArtists;
+			path = Reference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
