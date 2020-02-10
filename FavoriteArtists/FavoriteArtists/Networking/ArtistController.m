@@ -83,4 +83,20 @@ static NSString *baseURLString = @"https://theaudiodb.com/api/v1/json/1/search.p
     
 }
 
+// MARK: saveArtist
+- (void)saveArtist
+{
+    NSURL *documentDirectory = [[[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:@"artists.plist"];
+    
+    NSMutableArray *artistDictionaries = [[NSMutableArray alloc] init];
+    
+    for (Artist *artist in self.internalArtists) {
+        [artistDictionaries addObject:[artist toDictionary]];
+    }
+    
+    NSDictionary *d = @{@"artists":artistDictionaries};
+    [d writeToURL:documentDirectory atomically:YES];
+}
+
+
 @end
