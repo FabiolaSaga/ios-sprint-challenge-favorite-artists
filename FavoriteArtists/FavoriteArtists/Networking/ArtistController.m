@@ -98,5 +98,23 @@ static NSString *baseURLString = @"https://theaudiodb.com/api/v1/json/1/search.p
     [d writeToURL:documentDirectory atomically:YES];
 }
 
+// MARK: addArtist / removeArtist
+
+- (void)addArtist:(Artist *)aArtist
+{
+    [self.internalArtists addObject:aArtist];
+    [self saveArtist];
+}
+
+- (void)removeArtist:(Artist *)aArtist
+{
+    [self.internalArtists removeObject:aArtist];
+    [self saveArtist];
+}
+
+- (NSArray<Artist *> *)artists
+{
+    return [self.internalArtists copy];
+}
 
 @end
